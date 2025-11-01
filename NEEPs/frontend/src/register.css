@@ -1,0 +1,107 @@
+.reg-cont{
+    display: flex;
+    background: radial-gradient(circle,  rgba(145, 136, 134, 0.736) , black 200%);
+
+    height: 100vh;
+    gap:20px;
+}
+
+.reg-box1{
+   flex:0.6;
+   display: flex;
+  margin: 20px 20px;
+  
+
+}
+
+.reg-box2{
+    flex:0.35;
+   
+}
+
+
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+   
+  }
+  .form{
+    margin-top: 20px;
+    margin-left: 80px;
+    line-height: 30px;
+  }
+  .form-group input {
+    width: 130%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    
+  }
+
+  
+  .form-group label {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    color: #999;
+    transition: all 0.2s ease;
+    pointer-events: none; /* Prevents label from being clickable */
+  }
+  
+  .form-group input:focus ~ label,
+  .form-group input:not(:placeholder-shown) ~ label {
+    top: -0.75rem;
+    left: 1rem;
+    font-size: 0.65rem;
+    color: #007bff;
+    background-color: #fff;
+    padding: 0 0.25rem;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .reg-cont1{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+
+
+
+.reg-cont{
+  margin-bottom: 100px;
+}
+
+.box2-main{
+  padding: 20px;
+}
+
+.box2-main button{
+  position: relative;
+  left: 10%;
+  top: 20%;
+background-color: rgb(59, 59, 162);
+width: 80%;
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+.reg-cont{
+  display: block;
+  height: 200vh;
+}
+
+.reg-box2{ 
+
+}
+
+
+}
